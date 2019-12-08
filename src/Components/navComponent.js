@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 class NavComponent extends React.Component {
 
@@ -7,15 +7,21 @@ class NavComponent extends React.Component {
             return (
                 <nav id="nav">
                 <ul>
-                    <Link to="/">
-                        <li><span className="icon fa-home"></span></li>
-                    </Link>
-                    <Link to="/gallery">
-                        <li><span className="icon fa-camera-retro"></span></li>
-                    </Link>
-                    <Link to="/generic">
-                        <li><span className="icon fa-file-text-o"></span></li>
-                    </Link>
+                <li title="עמוד הבית">
+                    <NavLink  exact  to="/" activeClassName="active">
+                        <span className="icon fa-home"></span>
+                    </NavLink>
+                    </li>
+                    <li title="גלריה">
+                        <NavLink to="/gallery"  activeClassName="active">
+                        <span className="icon fa-camera-retro"></span>
+                        </NavLink>
+                    </li>
+                    <li title="מי אנחנו">
+                        <NavLink to="/generic"  activeClassName="active">
+                        <span className="icon fa-file-text-o"></span>
+                        </NavLink>
+                    </li>
                 </ul>
             </nav>
             )

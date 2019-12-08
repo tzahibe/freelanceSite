@@ -9,13 +9,19 @@ import GenericComponent from './Components/genericComponent';
 
 function App() {
   return (
-
     <Router>
       <Switch>
       <div class="page-wrap">
-        <NavComponent></NavComponent>
+      <NavComponent></NavComponent>
+      <section id="main">
         <Route path='/' exact component={HomeComponent} />
         <Route path='/generic' component={GenericComponent} />
+        <footer id="footer">
+                  <div class="copyright">
+                    &copy; Untitled Design: <a href="https://templated.co/">TEMPLATED</a>. Images: <a href="https://unsplash.com/">Unsplash</a>.
+                  </div>
+                </footer>
+            </section>
         </div>
       </Switch>
     </Router>

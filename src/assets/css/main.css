@@ -1423,11 +1423,11 @@
 					font-size: 1.5em;
 				}
 
-					#nav ul li a:hover {
+					#nav a:hover {
 						color: white;
 					}
 
-					#nav ul li a.active {
+					#nav a.active {
 						color: #19B5FE;
 					}
 
