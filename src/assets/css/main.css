@@ -1208,6 +1208,8 @@
 		padding: 3.5em 0 1.5em 0;
 		padding-left: 3.5em;
 		padding-right: 3.5em;
+		direction: rtl;
+
 	}
 
 		@media screen and (max-width: 980px) {
@@ -1397,24 +1399,28 @@
 	#nav {
 		background: #0d1217;
 		z-index: 10002;
-		position: relative;
-		width: 4em;
+		position: fixed;
+		width: 100%;
+		text-align: right;
+		padding-right: 15px;
 	}
 
 		#nav ul {
 			list-style: none;
-			margin: 0;
-			padding: 0;
-			position: fixed;
-			top: 1em;
-			left: 0;
+			display: flex;
+			flex-flow: column;
+			justify-content: space-evenly;
+			text-align: right;
+			padding-right: 5%;
+			padding-top: 1%;
+		}
+		.hideNav{
+			display: none !important;
 		}
 
 			#nav ul li {
 				padding: 0;
-				width: 3.75em;
-				text-align: Center;
-				margin-bottom: 1em;
+				margin-top: 10px;
 			}
 
 				#nav ul li a {
@@ -1422,7 +1428,12 @@
 					text-decoration: none;
 					font-size: 1.5em;
 				}
+				#nav ul li span{
 
+				}
+				#nav ul li a .nav_text{
+					margin-right:5px;
+				}
 					#nav a:hover {
 						color: white;
 					}
@@ -1431,13 +1442,13 @@
 						color: #19B5FE;
 					}
 
-				@media screen and (max-width: 736px) {
+				/* @media screen and (max-width: 736px) {
 
 					#nav ul li {
 						width: 3.4em;
 					}
 
-				}
+				} */
 
 /* Banner */
 
@@ -1612,4 +1623,61 @@
 				padding: 3em 0 1em 0;
 			}
 
+		}
+
+
+
+		/* .fade.in {
+			animation-name: fadeIn;
+			animation-duration: 2s;
+			-webkit-animation-duration: 2s; 
+			display: block !important;
+		}
+		
+		.fade.out {
+			animation-name: fadeOut;
+			transition-delay: 2s;
+			display: none !important;
+			animation-duration: 2s;
+			-webkit-animation-duration: 2s; 
+		} */
+		.navDiv{
+			background: black;
+			position:fixed;
+		}
+		.fade.in, .fade.out {
+			opacity: 0;
+			-moz-transition: height 1s ease-in-out;
+			-o-transition: height 1s ease-in-out;
+			-webkit-transition: height 1s ease-in-out;
+			transition: height 1s ease-in-out;
+			animation-duration: 2s;
+			-webkit-animation-duration: 2s; 
+		}
+		.fade.in {
+			opacity: 1;
+		}
+		.fade.out {
+			display: none !important;
+		}
+		@keyframes fadeIn {
+			0% {
+				opacity: 0;
+				height:0;
+			} 
+			100% {
+				opacity: 1;
+				height:auto;
+			}
+		}
+		
+		@keyframes fadeOut {
+			0% {
+				opacity: 1;
+				transform: translateY(startYposition);
+			} 
+			100% {
+				opacity: 0;
+				transform: translateY(endYposition);
+			}
 		}

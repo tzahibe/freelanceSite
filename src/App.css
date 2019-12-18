@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "aharoniclm";
+  src: url(/fonts/aharoniclm-bookoblique-webfont.ttf);
+}
+
 .App {
   text-align: center;
 }
@@ -34,5 +39,182 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+h1{
+  font-size: 3em;
+  color: #fbe800;
+  margin-bottom: 0;
+}
+h2{
+  font-size: 1.45em;
+}
+h3{
+  font-size: 1.34em;
+  font-weight: bold;
+  margin-bottom:5px;
+}
+p{
+  font-size:1.3em;
+}
+.background_section {
+  text-align: center;
+  background: #1f2c48;
+  color: #fff;
+  padding-bottom: 10px;
+}
+.background_section2{
+  text-align: center;
+  background: #969696;
+  color: #fff;
+  padding-bottom: 10px;
+}
+.background_section3{
+  margin-bottom: 12px;
+  margin-top: 12px;
+  border-bottom: 6px solid #fbe800;
+  padding-bottom: 0;
+  text-align: center;
+}
+.background_section2 h1{
+  -webkit-text-stroke-width:0;
+  color: #fff;
+}
+.background_section3 h1{
+  -webkit-text-stroke-width:0;
+  color: #272626;
+}
+
+.center{
+  text-align: center;
+}
+.shadowpadding{
+  box-shadow: 0px 0px 22px -7px rgba(0,0,0,0.5);
+  margin: 10px 10px 10px 10px;
+  padding:10px;
+}
+.radios50{
+  border-radius: 50px;
+}
+section.tripple{
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+button.moreButton{
+  MARGIN: AUTO 30%;
+  margin-bottom: 16px;
+}
+.column.products {
+  max-width: 498px;
+  border-radius: 17.5px;
+  -webkit-border-radius: 17.5px;
+  box-shadow: 0 1px 25px 0 rgba(0, 0, 0, 0.21);
+  background-color: #ffffff;
+  padding: 8px 30px 0 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 250px;
+}
+.inner_text{
+  padding:10px;
+  direction: rtl;
+  overflow: auto;
+}
+.inner_text p{
+  font-size:1.1em;
+}
+.column.products h3{
+  font-size: 1.5em;
+}
+.formclass .field label{
+  direction: rtl;
+}
+#contact h3{
+    text-align: right;
+    padding-bottom:10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1688bd;
+}
+.page-wrap{
+  flex-flow: column;
+}
+.fas.fa-bars{
+  color:#fff;
+  font-size:30px;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    font-size:12px;
+  }
+
+  .column.products{
+    width:100%;
+  }
+  .inner_text{
+    height:auto;
+  }
+
+  button.moreButton {
+    margin: 0;
+    width: 100%;
+    font-size: 20px;
+  }
+  .background_section h1{
+    font-size: 6em;
+  }
+  .background_section h2{
+      font-size: 1.45em;
+      text-align: right;
+      padding: 11px;
+      padding-top:0;
+  }
+  .background_section {
+    text-align: center;
+    color: #fff;
+    padding-bottom: 10px;
+    border-radius: 0 0 0 30%;
+  }
+  .background_section3{
+    margin-bottom: 12px;
+    margin-top: 12px;
+  }
+  section .inner, article .inner{
+    padding-left:0;
+    padding-right:0;
+  }
+  .background_section2{
+    padding-bottom:0;
+    background:none;
+    border-bottom: 6px solid #969696;
+  }
+  .background_section2 h1{
+    color:#3c3d3e;
+  }
+  .social.column img {
+    width: 100%;
+  }
+    #nav ul li {
+      text-align: center;
+      font-size: 1.5em;
   }
 }
