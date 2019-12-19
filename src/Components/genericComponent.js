@@ -84,13 +84,24 @@ class GenericComponent extends React.Component {
                                        מומחה בתחומו יודע לבנות מערכות שלמות מאפס.
                                     </p>
                                 </div>
-                                {/* <div className="column">
-                                    <span className="image left special"><img src="images/pic02.jpg" alt="" /></span>
-                                    <h3>Ridiculus Torquent Quam Accumsan</h3>
-                                    <p>
-                                        At sem phasellus elit class dapibus lectus posuere donec morbi in cras commodo faucibus ipsum vehicula fringilla. Risus hendrerit sit condimentum at rutrum vulputate fringilla dis curae metus ipsum imperdiet vulputate sapien dolorem ligula sapien curae consequat vestibulum urna. Nulla vulputate cum augue non arcu.
+                                <div className="column">
+                                    <span className="image left special"><img src="" alt="" /></span>
+                                    <h3>משה-אביאל יוסף</h3>
+                                    <p style={{"font-size":"16px"}} className="mb-2">
+                                        ידע בתחומים הבאים:
                                     </p>
-                                </div> */}
+                                    <ul>
+                                        <li>שימוש במגוון רחב של טכנולוגיות שבעיקרן ,C# ,asp.net, React-Redux
+                                            html ,css, jquery, bootstrap
+                                        </li>
+                                        <li>תחזוקה ופיתוח אתרים.</li>
+                                        <li>יצירת וצריכת Web API.</li>
+                                        <li>בניית אתרי אינטרנט רספונסיביים.</li>
+                                        <li>שימוש במערכת ניהול גרסות TFS של חברת Microsoft.</li>
+                                        <li>עבודה מול מסדי נתונים רלציוניים ושימוש ב SQL.</li>
+                                        <li>עבודה בצוות רחב של מפתחים, אנשי QA, ראשי צוותים ומנהלי פרויקטים. </li>
+                                    </ul>
+                                </div>
                             </section>
                         </div>
                     </section>
