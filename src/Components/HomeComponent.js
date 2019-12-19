@@ -6,7 +6,7 @@ class HomeComponent extends React.Component {
 
         render() {
             return (
-                <section id="main">
+                <section>
                 <section id="banner">
                   <BannerComponent></BannerComponent>
                 </section>
