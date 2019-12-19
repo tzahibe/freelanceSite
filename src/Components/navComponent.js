@@ -4,11 +4,31 @@ import {NavLink} from "react-router-dom";
 class NavComponent extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {shouldHide: true};
+        this.state = {
+                       isMobile: this.isMobileDevice(),
+                       shouldHide:false
+                    };
+
+        if(this.state.isMobile){
+            this.setState({shouldHide: false});
+        }
+        else{
+            this.setState({shouldHide: false});      
+          }
+       
       }
 
+       isMobileDevice() {
+        return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+      };
+
       toggleNav = () => {
-        this.setState({shouldHide: !this.state.shouldHide});
+          if(!this.state.isMobile){
+            this.setState({shouldHide: false});
+          }
+          else{
+            // this.setState({shouldHide: !this.state.shouldHide});
+          }
       };
         render() {
 
